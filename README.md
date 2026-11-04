@@ -28,3 +28,8 @@ The symbols are visual communication aids. They are not BSL signs and must not b
 ## BSL content
 
 The six entries (hello, thank you, please, help, family, school) are starter placeholders only. No entry contains verified signing guidance. Confirm actual signs with competent BSL users and source genuine demonstrations before treating any entry as reliable.
+
+
+## Deployment
+
+GitHub Pages deployment workflow is configured in `.github/workflows/pages.yml` and runs on pushes to `main`.
