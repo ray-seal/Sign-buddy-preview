@@ -33,3 +33,6 @@ The six entries (hello, thank you, please, help, family, school) are starter pla
 ## Deployment
 
 GitHub Pages deployment workflow is configured in `.github/workflows/pages.yml` and runs on pushes to `main`.
+
+
+GitHub Pages setup confirmed. Static preview deployment can now run through GitHub Actions.
