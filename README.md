@@ -1,18 +1,16 @@
 # SignBuddy review playground
 
-A standalone static review site for checking British Sign Language entries before changes are merged into the main SignBuddy app.
+A standalone static review site for checking illustrated British Sign Language entries before changing the main SignBuddy app.
 
-## UCL BSL SignBank lookup
+## British Sign illustrated dictionary
 
-The preview opens the official UCL BSL SignBank dictionary for manual English-word searches. It does not scrape SignBank, proxy its content, embed its video files, or redistribute its data.
+The lookup links to the public BSL dictionary at https://www.british-sign.co.uk/bsl-dictionary. The dictionary currently lists 485 entries with illustrations and short descriptions. It states that signs can vary by region and community, and each entry shows one commonly used version.
 
-UCL explicitly permits external links to individual sign pages, but prohibits scraping and external direct links to video files without written permission. Its dictionary data and videos are for non-commercial public use and are not available for bulk redistribution or licensing. Read the official terms: https://bslsignbank.ucl.ac.uk/about/dictionary/
-
-For this reason, this playground links users to the SignBank search page rather than pretending it has an open API. If SignBuddy needs integrated video results, we should contact UCL DCAL (bslsignbank@ucl.ac.uk) to discuss permission or collaboration.
+SignBuddy links to individual dictionary entries on the original site. It does not scrape, copy, host or redistribute their illustrations or descriptions. The source's own context and attribution remain visible.
 
 ## BSL review checklist
 
-The six starter entries (hello, thank you, please, help, family, school) remain placeholders. Use the SignBank lookup to inspect the actual BSL signs and variants. Review selections are stored in this browser only.
+The six starter entries (hello, thank you, please, help, family, school) remain placeholders in this preview. Use the links to inspect the illustrated entries and record review notes. Selections are stored in this browser only.
 
 ## Hosting
 
