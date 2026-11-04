@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="theme-color" content="#124f50">
-  <meta name="description" content="A separate SignBuddy playground for reviewing picture symbols and BSL content.">
+  <meta name="description" content="A separate SignBuddy playground for reviewing British Sign Language entries.">
   <title>SignBuddy | Review playground</title>
   <link rel="stylesheet" href="./styles.css">
   <script defer src="./app.js"></script>
@@ -13,7 +13,7 @@
   <header class="topbar">
     <a class="brand" href="./">SignBuddy <span>review playground</span></a>
     <nav aria-label="Main navigation">
-      <a href="#symbols">Picture symbols</a>
+      <a href="#symbols">BSL SignBank search</a>
       <a href="#bsl">BSL entries</a>
       <a href="#about">About</a>
     </nav>
@@ -34,7 +34,7 @@
         <label for="symbol-query">Which English word do you want to look up?</label>
         <div class="search-row"><input id="symbol-query" name="q" type="search" minlength="2" maxlength="80" placeholder="Try hello, help, toilet, thank you or family" required><button class="button" type="submit">Open SignBank</button></div>
       </form>
-      <p id="symbol-status" class="status" role="status" aria-live="polite">Search to load pictograms from ARASAAC.</p>
+      <p id="symbol-status" class="status" role="status" aria-live="polite">Enter a word above to open its lookup in UCL BSL SignBank.</p>
       <div id="symbol-results" class="symbol-grid"></div>
       <p class="attribution">Dictionary and videos: UCL Deafness, Cognition & Language Research Centre. <a href="https://bslsignbank.ucl.ac.uk/about/dictionary/" target="_blank" rel="noopener">SignBank permissions and usage terms</a>. SignBank permits links to individual sign pages, but prohibits scraping and direct external video-file links without written permission.</p>
     </section>
