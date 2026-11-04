@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#124f50">
+  <meta name="description" content="A separate SignBuddy playground for reviewing picture symbols and BSL content.">
+  <title>SignBuddy | Review playground</title>
+  <link rel="stylesheet" href="./styles.css">
+  <script defer src="./app.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="./">SignBuddy <span>review playground</span></a>
+    <nav aria-label="Main navigation">
+      <a href="#symbols">Picture symbols</a>
+      <a href="#bsl">BSL entries</a>
+      <a href="#about">About</a>
+    </nav>
+  </header>
+  <main>
+    <section class="hero">
+      <p class="eyebrow">Independent test site · GitHub Pages</p>
+      <h1>Try it. Check it. Make it useful.</h1>
+      <p>This is a safe review playground, separate from the main SignBuddy app and Vercel. Search real ARASAAC pictograms and inspect the current starter BSL entries.</p>
+      <div class="hero-actions"><a class="button" href="#symbols">Search picture symbols</a><a class="button secondary" href="#bsl">Review BSL entries</a></div>
+    </section>
+
+    <section class="panel" id="symbols">
+      <p class="eyebrow">ARASAAC pictogram library</p>
+      <h2>Find a picture symbol</h2>
+      <p>Search for an everyday word or idea. These are visual communication symbols, not BSL signs or handshape demonstrations.</p>
+      <form id="symbol-form">
+        <label for="symbol-query">What are you looking for?</label>
+        <div class="search-row"><input id="symbol-query" name="q" type="search" minlength="2" maxlength="80" placeholder="Try water, pain, toilet, happy or help" required><button class="button" type="submit">Find symbols</button></div>
+      </form>
+      <p id="symbol-status" class="status" role="status" aria-live="polite">Search to load pictograms from ARASAAC.</p>
+      <div id="symbol-results" class="symbol-grid"></div>
+      <p class="attribution">Pictograms: Government of Aragón, created by Sergio Palao for ARASAAC. <a href="https://arasaac.org/terms-of-use" target="_blank" rel="noopener">ARASAAC terms of use</a>. Non-commercial licence; attribution and share-alike conditions apply.</p>
+    </section>
+
+    <section class="panel" id="bsl">
+      <p class="eyebrow">Current starter dictionary</p>
+      <h2>Review the BSL entries</h2>
+      <p>These are the six starter words currently in SignBuddy. They are placeholders, not verified signing instructions. Use the review controls to record what needs attention during testing. Your review notes stay in this browser only.</p>
+      <div class="review-tools">
+        <label for="review-filter">Show</label>
+        <select id="review-filter"><option value="all">All entries</option><option value="todo">Not reviewed</option><option value="correct">Looks suitable</option><option value="needs-work">Needs work</option></select>
+      </div>
+      <div id="bsl-list" class="entry-grid"></div>
+      <p class="status">Important: do not mark a sign as correct unless its actual BSL form has been checked with a competent BSL user or trusted source.</p>
+    </section>
+
+    <section class="panel" id="about">
+      <p class="eyebrow">What this playground is for</p>
+      <h2>A testing space, not a live release</h2>
+      <ul class="plain-list">
+        <li>Check which ARASAAC symbols are returned for real-world communication needs.</li>
+        <li>Spot ambiguous pictures, confusing labels and missing concepts.</li>
+        <li>Record which BSL entries need genuine video demonstrations and review.</li>
+        <li>Keep all experiments separate from the main app and its Vercel build quota.</li>
+      </ul>
+      <p class="notice">This site is static. Symbol searches call ARASAAC directly from your browser. No SignBuddy server, database, account or Vercel deployment is involved.</p>
+      <p><a href="https://github.com/ray-seal/SignBuddy" target="_blank" rel="noopener">Main SignBuddy repository</a> · <a href="https://github.com/ray-seal/Sign-buddy-preview" target="_blank" rel="noopener">Preview repository</a></p>
+    </section>
+  </main>
+  <footer>SignBuddy · Communication first, perfection second.</footer>
+</body>
+</html>
